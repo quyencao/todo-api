@@ -23,11 +23,15 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
     //
     // });
 
-    db.collection('Users').find({name:'Quyen'}).toArray().then((docs) => {
-        console.log(JSON.stringify(docs, undefined, 2));
-    }, (err) => {
-       console.log(err);
-    });
+    // db.collection('Users').find({name:'Quyen'}).toArray().then((docs) => {
+    //     console.log(JSON.stringify(docs, undefined, 2));
+    // }, (err) => {
+    //     console.log(err);
+    // });
+    //
+    // db.collection('Todos').find({text:'Eat lunch'}).toArray().then((res) => {
+    //    console.log(res);
+    // });
 
     // db.collection('Todos').findOneAndUpdate({_id: ObjectID("589c8b0684135929b4a65b37")},
     //     {$set: {text:"Something to do!!", completed: false}}).then((res) => {
